@@ -98,10 +98,3 @@ service conn_init /system/bin/logwrapper /system/bin/conn_init
     user system
     group system wifi
     oneshot
-
-service fm_dl /system/bin/sh /system/etc/init.gee.fm.sh
-    class late_start
-    user root
-    group system qcom_oncrpc
-    disabled
-    oneshot
